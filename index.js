@@ -60,7 +60,7 @@ function send() {
     $.ajax({
         type: "POST",
         contentType: "application/json",
-        url: 'http://cors.io/?https://neet-pnus.azurewebsites.net/api/classification?code=V8gr1NnfY9W4d/qrZ6b0l2LwnxTnx5wyOTJ6dAIho59ki6aZa7iYrA==',
+        url: 'https://neet-pnus.azurewebsites.net/api/classification?code=V8gr1NnfY9W4d/qrZ6b0l2LwnxTnx5wyOTJ6dAIho59ki6aZa7iYrA==',
         data: scope.input,
 
         // url: "/data",
