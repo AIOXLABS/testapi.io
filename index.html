@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NEET API TEST</title>
+    <!-- bootstrap 4.5 -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- * Angular 1.7 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- * our css -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- * our scripts -->
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body class="body" ng-app="myapp" ng-controller="MainCtrl" id="idBody">
+   
+    <!-- * survey -->
+    <div  style="border-style:solid; width:100%; height: calc(100vh - 0px);padding:10px;">
+        <label for="question">Test:</label>
+        <h3 id="question" class="centerInsideDiv" style="width: 100%;">{{questions[cursor]}}</h3>
+        <br>
+        <div class="form-group">
+            <label for="comment">JSON input:</label>
+            <textarea ng-model="input" class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <br>
+
+        <div class="centerInsideDiv" style="width: 100%;">
+            <button onclick="send()" type="button" class="btn btn-success" style="margin:5px">Envoyé <i
+                    class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        <label for="output">JSON output:</label>
+        <textarea ng-model="output" class="form-control" rows="5" id="output"></textarea>
+    </div>
+
+    
+
+</body>
+
+</html>
