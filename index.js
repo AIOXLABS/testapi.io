@@ -59,7 +59,7 @@ app.controller('MainCtrl', ['$scope', '$window', function ($scope, $window) {
 	}],
 	"progression": "100"
 });
-
+}]);
 
 function send() {
     // Form Data
